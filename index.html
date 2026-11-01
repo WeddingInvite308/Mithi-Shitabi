@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mithi Shitabi · [Mom-to-be's name]</title>
+  <meta name="theme-color" content="#f3e8df">
+
+  <!-- Link preview (WhatsApp, iMessage…). After hosting, change this to the full https:// address of images/opening.jpg -->
+  <meta property="og:title" content="You're invited to a Mithi Shitabi">
+  <meta property="og:description" content="Tap the balloon to open your invitation.">
+  <meta property="og:image" content="images/opening.jpg">
+
+  <link rel="preload" as="image" href="images/opening.jpg">
+  <link rel="stylesheet" href="style.css?v=pram-1">
+</head>
+<body>
+
+  <!-- ============ Page 1: the opening, with the balloon ============ -->
+  <section class="opening" id="opening" aria-label="Baby shower invitation">
+    <div class="opening-art" aria-hidden="true"></div>
+    <button class="balloon" id="openBtn" type="button" aria-label="Click to open invite">
+      <svg class="balloon-art" viewBox="0 0 300 330" aria-hidden="true">
+        <defs>
+          <radialGradient id="balloonFill" cx=".36" cy=".3" r=".78">
+            <stop offset="0" stop-color="#f8e3ea"/><stop offset=".45" stop-color="#e3b2c6"/><stop offset="1" stop-color="#b47895"/>
+          </radialGradient>
+          <radialGradient id="balloonShine" cx=".5" cy=".45" r=".5">
+            <stop offset="0" stop-color="#ffffff" stop-opacity=".85"/><stop offset=".55" stop-color="#ffffff" stop-opacity=".3"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+          </radialGradient>
+          <radialGradient id="obLilac" cx=".36" cy=".3" r=".8"><stop offset="0" stop-color="#f3ecfa"/><stop offset=".5" stop-color="#cdb8e3"/><stop offset="1" stop-color="#9179b5"/></radialGradient>
+          <radialGradient id="obGold" cx=".36" cy=".3" r=".8"><stop offset="0" stop-color="#fff6de"/><stop offset=".5" stop-color="#ecd7a4"/><stop offset="1" stop-color="#b8924f"/></radialGradient>
+          <linearGradient id="balloonGold" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#fff4d6"/><stop offset=".5" stop-color="#f1d9a0"/><stop offset="1" stop-color="#fff0c9"/>
+          </linearGradient>
+        </defs>
+        <!-- two smaller balloons behind, tied into one bunch -->
+        <path d="M85.4 182 C96 228 138 262 150 318 M214.5 168.4 C206 224 162 262 150 318" fill="none" stroke="#c4a160" stroke-width="1.3" stroke-linecap="round"/>
+        <g class="side-balloon left" transform="translate(68 112) rotate(-14)">
+          <path d="M0 -62 C34 -62 52 -34 52 -2 C52 36 26 60 0 64 C-26 60 -52 36 -52 -2 C-52 -34 -34 -62 0 -62Z" fill="url(#obLilac)"/>
+          <ellipse cx="-18" cy="-30" rx="12" ry="22" transform="rotate(28 -18 -30)" fill="url(#balloonShine)"/>
+          <path d="M-6 64 L6 64 L3 72 L-3 72Z" fill="#9179b5"/>
+        </g>
+        <g class="side-balloon right" transform="translate(232 98) rotate(12)">
+          <path d="M0 -62 C34 -62 52 -34 52 -2 C52 36 26 60 0 64 C-26 60 -52 36 -52 -2 C-52 -34 -34 -62 0 -62Z" fill="url(#obGold)"/>
+          <ellipse cx="-18" cy="-30" rx="12" ry="22" transform="rotate(28 -18 -30)" fill="url(#balloonShine)"/>
+          <path d="M-6 64 L6 64 L3 72 L-3 72Z" fill="#b8924f"/>
+        </g>
+        <!-- the main "baby" balloon in front -->
+        <g transform="translate(65 30)">
+        <path d="M85 188 C78 205 94 214 86 228 C79 241 92 250 85 262 C80 272 88 280 85 300" fill="none" stroke="#c4a160" stroke-width="1.6" stroke-linecap="round"/>
+        <path d="M85 8 C125 8 152 42 152 86 C152 134 116 172 85 178 C54 172 18 134 18 86 C18 42 45 8 85 8Z" fill="url(#balloonFill)"/>
+        <ellipse cx="58" cy="56" rx="20" ry="34" transform="rotate(30 58 56)" fill="url(#balloonShine)"/>
+        <path d="M128 60 C138 82 138 112 124 136" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" opacity=".28"/>
+        <path d="M78 178 L92 178 L88 188 L82 188Z" fill="#b47895"/>
+        </g>
+        <!-- a little bow where the strings meet -->
+        <path d="M136 318 C140 308 148 308 150 316 C152 308 160 308 164 318 C160 328 152 328 150 320 C148 328 140 328 136 318Z" fill="#c9a0b8"/>
+      </svg>
+      <span class="balloon-tag">
+        <span class="tag-hole" aria-hidden="true"></span>
+        <span class="tag-text">Click to open invite</span>
+      </span>
+    </button>
+  </section>
+
+  <div class="stage" id="stage">
+  <div class="sheet" id="sheet">
+
+  <!-- ============ Page 2: the invitation (scrapbook collage) ============ -->
+  <main class="invite" id="invite">
+    <!-- tiny baby things sprinkled around the page -->
+    <div class="sprinkles" aria-hidden="true">
+      <svg class="sprinkle" style="left:204px;top:16px;width:22px;height:22px;rotate:-10deg;--d:0.00s" viewBox="0 0 40 40" aria-hidden="true"><use href="#i-star"/></svg>
+      <svg class="sprinkle" style="left:196px;top:58px;width:26px;height:26px;rotate:0deg;--d:0.37s" viewBox="0 0 40 40" aria-hidden="true"><use href="#i-dots"/></svg>
+      <svg class="sprinkle" style="left:8px;top:330px;width:30px;height:30px;rotate:-14deg;--d:1.11s" viewBox="0 0 40 40" aria-hidden="true"><use href="#i-pacifier"/></svg>
+      <svg class="sprinkle" style="left:350px;top:931px;width:30px;height:30px;rotate:10deg;--d:2.18s" viewBox="0 0 40 40" aria-hidden="true"><use href="#i-teddy"/></svg>
+      <svg class="sprinkle" style="left:196px;top:937px;width:18px;height:18px;rotate:-8deg;--d:2.55s" viewBox="0 0 40 40" aria-hidden="true"><use href="#i-heart"/></svg>
+      <svg class="sprinkle" style="left:22px;top:1243px;width:32px;height:32px;rotate:-10deg;--d:2.92s" viewBox="0 0 40 40" aria-hidden="true"><use href="#i-onesie"/></svg>
+      <svg class="sprinkle" style="left:86px;top:1247px;width:34px;height:34px;rotate:4deg;--d:0.29s" viewBox="0 0 40 40" aria-hidden="true"><use href="#i-pram"/></svg>
+      <svg class="sprinkle" style="left:140px;top:1237px;width:18px;height:18px;rotate:10deg;--d:0.66s" viewBox="0 0 40 40" aria-hidden="true"><use href="#i-heart"/></svg>
+      <svg class="sprinkle" style="left:172px;top:1261px;width:18px;height:18px;rotate:-12deg;--d:1.03s" viewBox="0 0 40 40" aria-hidden="true"><use href="#i-star"/></svg>
+      <svg class="sprinkle" style="left:178px;top:1666px;width:16px;height:16px;rotate:0deg;--d:2.88s" viewBox="0 0 40 40" aria-hidden="true"><use href="#i-heart"/></svg>
+      <svg class="sprinkle" style="left:334px;top:1654px;width:18px;height:18px;rotate:14deg;--d:0.25s" viewBox="0 0 40 40" aria-hidden="true"><use href="#i-star"/></svg>
+      <svg class="sprinkle" style="left:262px;top:1758px;width:38px;height:38px;rotate:-6deg;--d:0.62s" viewBox="0 0 40 40" aria-hidden="true"><use href="#i-pram"/></svg>
+      <svg class="sprinkle" style="left:336px;top:1782px;width:28px;height:28px;rotate:16deg;--d:0.99s" viewBox="0 0 40 40" aria-hidden="true"><use href="#i-pacifier"/></svg>
+      <svg class="sprinkle" style="left:186px;top:1866px;width:30px;height:30px;rotate:10deg;--d:1.36s" viewBox="0 0 40 40" aria-hidden="true"><use href="#i-rattle"/></svg>
+      <svg class="sprinkle" style="left:190px;top:1956px;width:30px;height:30px;rotate:-6deg;--d:1.73s" viewBox="0 0 40 40" aria-hidden="true"><use href="#i-duck"/></svg>
+      <svg class="sprinkle" style="left:274px;top:1696px;width:16px;height:16px;rotate:-10deg;--d:2.10s" viewBox="0 0 40 40" aria-hidden="true"><use href="#i-heart"/></svg>
+      <svg class="sprinkle" style="left:112px;top:1682px;width:16px;height:16px;rotate:12deg;--d:2.47s" viewBox="0 0 40 40" aria-hidden="true"><use href="#i-star"/></svg>
+    </div>
+
+    <!-- 1. envelope with photos — replace images/photo-1.jpg and images/photo-2.jpg with your own -->
+    <section class="envelope-zone" aria-label="Our photos">
+      <img class="deco zone1-branch" src="images/deco-branch.webp" alt="">
+      <img class="deco zone1-bow" src="images/deco-bow.webp" alt="">
+      <div class="env">
+        <img class="env-back" src="images/envelope-back.webp" alt="" width="528" height="562">
+        <div class="photo p1"><div class="ph">Your bump<br>photo</div></div>
+        <div class="photo p2"><div class="ph">Scan<br>photo</div></div>
+        <img class="env-front" src="images/envelope-front.webp" alt="" width="528" height="562">
+        <img class="seal" src="images/wax-seal.webp" alt="" width="300" height="300">
+      </div>
+      <img class="deco float-bfly zone1-bfly" src="images/butterfly-1.webp" alt="">
+    </section>
+
+    <!-- 2. the invitation card -->
+    <div class="letter">
+    <section class="main-card" aria-label="Invitation">
+      <img class="bismillah" src="images/bismillah.webp" alt="Bismillah ir-Rahman ir-Rahim" width="400" height="160">
+      <img class="divider" src="images/divider-sprig.webp" alt="" width="412" height="51">
+      <p class="blessing">By the Grace of Allah,<br>Vasilat-e-Panjatan Pak (A.S.)<br>Janab-e-Abbas (A.S.) and with the Dua Mubarak of<br>Syedna Ali Qadr Mufaddal Saifuddin (T.U.S.)</p>
+      <img class="divider" src="images/divider-sprig.webp" alt="" width="412" height="51">
+      <p class="invited">You are invited to the</p>
+      <h1 class="mithi">Mithi Shitabi</h1>
+      <p class="on-line"><span>on</span></p>
+      <div class="date-strip">
+        <div class="side">[Month]</div>
+        <div class="day">[14]</div>
+        <div class="side">[4:00 PM]</div>
+      </div>
+      <p class="venue">[Venue name]<br>[Area, City]</p>
+      <!-- put the venue's Google Maps link in href -->
+      <a class="pill" href="#" target="_blank" rel="noopener noreferrer">View location</a>
+      <img class="divider" src="images/divider-sprig.webp" alt="" width="412" height="51">
+      <p class="presence">Your presence will be a blessing for us.</p>
+    </section>
+    </div>
+
+    <!-- 3. boy or girl + RSVP balloons -->
+    <section class="duo">
+      <div class="card gold-border guess-card">
+        <h2 class="script">Boy or girl?</h2>
+        <p class="caps lead">Cast your guess</p>
+        <div class="guess-row">
+          <button class="guess-btn girl" type="button" data-guess="girl" aria-pressed="false">
+            <svg viewBox="0 0 80 132" aria-hidden="true">
+              <defs>
+                <radialGradient id="gpBody" cx=".38" cy=".32" r=".78" fx=".34" fy=".26">
+                  <stop offset="0" stop-color="#fdeef3"/><stop offset=".35" stop-color="#f3bfd0"/><stop offset=".78" stop-color="#d58aa6"/><stop offset="1" stop-color="#a95c7c"/>
+                </radialGradient>
+                <radialGradient id="gpBounce" cx=".7" cy=".86" r=".42"><stop offset="0" stop-color="#fff" stop-opacity=".38"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
+                <radialGradient id="gpGlow" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#fff" stop-opacity=".75"/><stop offset=".6" stop-color="#fff" stop-opacity=".18"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
+                <linearGradient id="gpKnot" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#a95c7c"/><stop offset=".5" stop-color="#f3bfd0"/><stop offset="1" stop-color="#a95c7c"/></linearGradient>
+              </defs>
+              <!-- curly ribbon -->
+              <path d="M40 96 C35 104 46 108 40 116 C35 122 44 126 40 132" fill="none" stroke="#c9a96a" stroke-width="1.3" stroke-linecap="round"/>
+              <path d="M40 96 C35 104 46 108 40 116 C35 122 44 126 40 132" fill="none" stroke="#fff6dc" stroke-width=".5" stroke-linecap="round" transform="translate(-.4 0)" opacity=".7"/>
+              <!-- latex body: slightly pear-shaped, like a real balloon -->
+              <path d="M40 4 C61 4 75 21 75 42 C75 66 57 85 43 90 L37 90 C23 85 5 66 5 42 C5 21 19 4 40 4Z" fill="url(#gpBody)"/>
+              <path d="M40 4 C61 4 75 21 75 42 C75 66 57 85 43 90 L37 90 C23 85 5 66 5 42 C5 21 19 4 40 4Z" fill="url(#gpBounce)"/>
+              <!-- soft window reflection and a sharp highlight -->
+              <ellipse cx="25" cy="26" rx="13" ry="19" transform="rotate(24 25 26)" fill="url(#gpGlow)"/>
+              <path d="M18 23 C20 15 26 11 32 10 C27 14 23 19 22 27 Z" fill="#fff" opacity=".85"/>
+              <circle cx="34" cy="17" r="1.8" fill="#fff" opacity=".8"/>
+              <!-- rim light along the right edge -->
+              <path d="M66 26 C73 38 72 56 62 70" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" opacity=".32"/>
+              <!-- tied neck -->
+              <path d="M36 89 C37 92 37.5 93 36 95 C38 96.5 42 96.5 44 95 C42.5 93 43 92 44 89 Z" fill="url(#gpKnot)"/>
+              <path d="M37 95 Q40 97.5 43 95" fill="none" stroke="#a95c7c" stroke-width=".8"/>
+            </svg>
+            <span class="word">Girl</span>
+          </button>
+          <button class="guess-btn boy" type="button" data-guess="boy" aria-pressed="false">
+            <svg viewBox="0 0 80 132" aria-hidden="true">
+              <defs>
+                <radialGradient id="gbBody" cx=".38" cy=".32" r=".78" fx=".34" fy=".26">
+                  <stop offset="0" stop-color="#f1f7fd"/><stop offset=".35" stop-color="#c3d8ee"/><stop offset=".78" stop-color="#8eb0d6"/><stop offset="1" stop-color="#5f84ae"/>
+                </radialGradient>
+                <radialGradient id="gbBounce" cx=".7" cy=".86" r=".42"><stop offset="0" stop-color="#fff" stop-opacity=".38"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
+                <radialGradient id="gbGlow" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#fff" stop-opacity=".75"/><stop offset=".6" stop-color="#fff" stop-opacity=".18"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
+                <linearGradient id="gbKnot" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#5f84ae"/><stop offset=".5" stop-color="#c3d8ee"/><stop offset="1" stop-color="#5f84ae"/></linearGradient>
+              </defs>
+              <!-- curly ribbon -->
+              <path d="M40 96 C45 104 34 108 40 116 C45 122 36 126 40 132" fill="none" stroke="#c9a96a" stroke-width="1.3" stroke-linecap="round"/>
+              <path d="M40 96 C45 104 34 108 40 116 C45 122 36 126 40 132" fill="none" stroke="#fff6dc" stroke-width=".5" stroke-linecap="round" transform="translate(-.4 0)" opacity=".7"/>
+              <!-- latex body: slightly pear-shaped, like a real balloon -->
+              <path d="M40 4 C61 4 75 21 75 42 C75 66 57 85 43 90 L37 90 C23 85 5 66 5 42 C5 21 19 4 40 4Z" fill="url(#gbBody)"/>
+              <path d="M40 4 C61 4 75 21 75 42 C75 66 57 85 43 90 L37 90 C23 85 5 66 5 42 C5 21 19 4 40 4Z" fill="url(#gbBounce)"/>
+              <!-- soft window reflection and a sharp highlight -->
+              <ellipse cx="25" cy="26" rx="13" ry="19" transform="rotate(24 25 26)" fill="url(#gbGlow)"/>
+              <path d="M18 23 C20 15 26 11 32 10 C27 14 23 19 22 27 Z" fill="#fff" opacity=".85"/>
+              <circle cx="34" cy="17" r="1.8" fill="#fff" opacity=".8"/>
+              <!-- rim light along the right edge -->
+              <path d="M66 26 C73 38 72 56 62 70" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" opacity=".32"/>
+              <!-- tied neck -->
+              <path d="M36 89 C37 92 37.5 93 36 95 C38 96.5 42 96.5 44 95 C42.5 93 43 92 44 89 Z" fill="url(#gbKnot)"/>
+              <path d="M37 95 Q40 97.5 43 95" fill="none" stroke="#5f84ae" stroke-width=".8"/>
+            </svg>
+            <span class="word">Boy</span>
+          </button>
+        </div>
+        <p class="tap-hint" id="guessResult" aria-live="polite">Tap a balloon</p>
+      </div>
+
+      <div class="rsvp-zone">
+        <a class="basket tap-me" href="#rsvp" aria-label="RSVP">
+          <img src="images/gift-basket.webp" alt="" width="520" height="510">
+        </a>
+        <p class="script kindly">Kindly <span>RSVP</span></p>
+        <p class="tap-hint">By tapping<br>the gift basket</p>
+      </div>
+    </section>
+
+    <!-- 4. mark your calendar -->
+    <section class="calendar" aria-label="Mark your calendar">
+      <div class="cal-panel">
+        <img class="cal-sprig" src="images/divider-sprig.webp" alt="" width="412" height="51">
+        <h2 class="script">Mark your calendar</h2>
+        <p class="caps sweet">The sweetest wait</p>
+        <p class="foil cal-date">[Saturday, 14 November 2026] · [4:00 PM]</p>
+        <div class="count" id="countdown" role="timer" aria-label="Time until the Mithi Shitabi">
+          <div class="tile"><div class="num" data-unit="d">00</div><div class="unit">Days</div></div>
+          <span class="colon" aria-hidden="true">:</span>
+          <div class="tile"><div class="num" data-unit="h">00</div><div class="unit">Hours</div></div>
+          <span class="colon" aria-hidden="true">:</span>
+          <div class="tile"><div class="num" data-unit="m">00</div><div class="unit">Mins</div></div>
+          <span class="colon" aria-hidden="true">:</span>
+          <div class="tile"><div class="num" data-unit="s">00</div><div class="unit">Secs</div></div>
+        </div>
+        <p class="count-done" id="countDone" hidden>Today's the day!</p>
+        <img class="cal-sprig flip" src="images/divider-sprig.webp" alt="" width="412" height="51">
+      </div>
+    </section>
+
+    <!-- 5. footer -->
+    <footer class="footer">
+      <img class="deco bouquet" src="images/deco-bouquet.webp" alt="">
+      <img class="deco seal" src="images/deco-seal.webp" alt="">
+      <p class="script love">With love,</p>
+      <p class="caps hosts">[Host names]</p>
+    </footer>
+  </main>
+
+  <!-- ============ Page 3: RSVP ============ -->
+  <section class="rsvp-page" id="rsvp" aria-labelledby="rsvpTitle" hidden>
+    <div class="scallop">
+      <img class="rsvp-pram" src="images/pram.webp" alt="" width="312" height="355">
+      <div class="scallop-inner">
+
+        <form id="rsvpForm" novalidate>
+          <h2 class="script rsvp-title" id="rsvpTitle" tabindex="-1">Kindly <span>RSVP</span></h2>
+          <p class="caps rsvp-by">Please reply by [RSVP date]</p>
+
+          <label class="field-label" for="guestName">Your name <span aria-hidden="true">*</span></label>
+          <input class="field" id="guestName" name="name" type="text" autocomplete="name" required>
+          <p class="field-error" id="nameError" hidden>Please write your name.</p>
+
+          <fieldset class="choice-group">
+            <legend class="field-label">Will you be joining us? <span aria-hidden="true">*</span></legend>
+            <label class="choice"><input type="radio" name="attending" value="Yes" id="attYes" required><span>Absolutely, I'll be there!</span></label>
+            <label class="choice"><input type="radio" name="attending" value="No" id="attNo"><span>Sadly, I can't make it</span></label>
+          </fieldset>
+          <p class="field-error" id="attError" hidden>Please choose one.</p>
+
+          <div class="guests-row" id="guestsRow">
+            <label class="field-label" for="guestCount">How many guests, including you?</label>
+            <select class="field" id="guestCount" name="guests">
+              <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
+            </select>
+          </div>
+
+          <label class="field-label" for="guestWish">A little wish for baby <span class="optional">(optional)</span></label>
+          <textarea class="field" id="guestWish" name="wish" rows="2"></textarea>
+
+          <button class="send" type="submit" id="sendBtn">Send</button>
+          <p class="send-note">Your reply goes straight to [host name].</p>
+        </form>
+
+        <div class="thanks" id="thanks" hidden tabindex="-1">
+          <p class="script thanks-title" id="thanksTitle">Thank you!</p>
+          <p class="thanks-text" id="thanksText">We can't wait to celebrate with you.</p>
+        </div>
+
+        <a class="back-link" href="#invite">Back to invite</a>
+      </div>
+    </div>
+  </section>
+
+  </div>
+  </div>
+
+  <!-- tiny baby drawings used by the sprinkles -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><symbol id="i-pacifier" viewBox="0 0 40 40"><circle cx="20" cy="9" r="5.5" fill="none" stroke="#b8924f" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/><ellipse cx="20" cy="21" rx="13" ry="6.5" fill="#f2c4d2" stroke="#b8924f" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="20" cy="21" r="2.6" fill="#fff" stroke="#b8924f" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/><ellipse cx="20" cy="31.5" rx="4.5" ry="5.5" fill="#f6e6c4" stroke="#b8924f" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></symbol><symbol id="i-bottle" viewBox="0 0 40 40"><path d="M17 8 Q20 1 23 8Z" fill="#f6e6c4" stroke="#b8924f" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/><rect x="14" y="8" width="12" height="5" rx="1.5" fill="#d8c3e8" stroke="#b8924f" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/><rect x="13" y="13" width="14" height="24" rx="5" fill="#eef4fb" stroke="#b8924f" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/><rect x="14.5" y="24" width="11" height="11.5" rx="4" fill="#f6dfe6"/><path d="M14 19h4M14 24h4M14 29h4" stroke="#b8924f" stroke-width="1" stroke-linecap="round"/></symbol><symbol id="i-rattle" viewBox="0 0 40 40"><path d="M22 22 L33 35" stroke="#b8924f" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.4"/><circle cx="34" cy="36" r="3" fill="#f6e6c4" stroke="#b8924f" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="15" cy="15" r="11" fill="#d9c8ec" stroke="#b8924f" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="11" cy="12" r="1.6" fill="#fff"/><circle cx="17" cy="10" r="1.3" fill="#fff"/><circle cx="18" cy="18" r="1.6" fill="#fff"/><circle cx="12" cy="19" r="1.2" fill="#fff"/></symbol><symbol id="i-onesie" viewBox="0 0 40 40"><path d="M13 5 Q20 10 27 5 L35 11 L31 17 L28 15 L28 29 Q28 35 23 35 L22 31 L18 31 L17 35 Q12 35 12 29 L12 15 L9 17 L5 11Z" fill="#f4d0db" stroke="#b8924f" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="20" cy="18" r="1.1" fill="#b8924f"/><circle cx="20" cy="23" r="1.1" fill="#b8924f"/><path d="M15 5.8 Q20 12 25 5.8" fill="none" stroke="#b8924f" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></symbol><symbol id="i-booties" viewBox="0 0 40 40"><path d="M5 14 L5 27 Q5 33 11 33 L20 33 Q22 29 18 27 L13 25 L13 14Z" fill="#dccbee" stroke="#b8924f" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/><rect x="4" y="11" width="10" height="5" rx="2" fill="#f6e6c4" stroke="#b8924f" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 9 L21 22 Q21 28 27 28 L36 28 Q38 24 34 22 L29 20 L29 9Z" fill="#f2c4d2" stroke="#b8924f" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/><rect x="20" y="6" width="10" height="5" rx="2" fill="#f6e6c4" stroke="#b8924f" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></symbol><symbol id="i-pram" viewBox="0 0 40 40"><path d="M8 20 A12 12 0 0 1 20 8 L20 20Z" fill="#d9c8ec" stroke="#b8924f" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 20 H34 A13 9 0 0 1 21 29 A13 9 0 0 1 8 20Z" fill="#f2c4d2" stroke="#b8924f" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/><path d="M34 20 L37 13" stroke="#b8924f" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="13" cy="33" r="3.6" fill="#fff" stroke="#b8924f" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="29" cy="33" r="3.6" fill="#fff" stroke="#b8924f" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></symbol><symbol id="i-teddy" viewBox="0 0 40 40"><circle cx="10" cy="11" r="5.5" fill="#e3c29b" stroke="#b8924f" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="30" cy="11" r="5.5" fill="#e3c29b" stroke="#b8924f" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="20" cy="22" r="13" fill="#e8cba6" stroke="#b8924f" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/><ellipse cx="20" cy="27" rx="6" ry="4.5" fill="#f6e6d0" stroke="#b8924f" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="15" cy="20" r="1.4" fill="#6b5244"/><circle cx="25" cy="20" r="1.4" fill="#6b5244"/><ellipse cx="20" cy="25.5" rx="1.8" ry="1.3" fill="#6b5244"/><circle cx="11" cy="25" r="2" fill="#f2c4d2"/><circle cx="29" cy="25" r="2" fill="#f2c4d2"/></symbol><symbol id="i-duck" viewBox="0 0 40 40"><path d="M7 24 Q7 34 20 34 Q33 34 33 25 Q33 19 27 20 Q22 21 20 24Z" fill="#f6e2a0" stroke="#b8924f" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="25" cy="14" r="7" fill="#f6e2a0" stroke="#b8924f" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/><path d="M31 14 L37 15.5 L31 17.5Z" fill="#ecb27a" stroke="#b8924f" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="26.5" cy="12.5" r="1.2" fill="#6b5244"/><path d="M13 26 Q18 23 22 27" fill="none" stroke="#b8924f" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></symbol><symbol id="i-star" viewBox="0 0 40 40"><path d="M20 4 L24.5 14.5 L36 15.5 L27.2 23 L30 34.5 L20 28.5 L10 34.5 L12.8 23 L4 15.5 L15.5 14.5Z" fill="#f2dfa8" stroke="#b8924f" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></symbol><symbol id="i-moon" viewBox="0 0 40 40"><path d="M26 5 A15 15 0 1 0 34 30 A12 12 0 0 1 26 5Z" fill="#f2dfa8" stroke="#b8924f" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="31" cy="9" r="1.3" fill="#b8924f"/></symbol><symbol id="i-heart" viewBox="0 0 40 40"><path d="M20 34 C8 26 4 19 6 13 C8 7 16 6 20 12 C24 6 32 7 34 13 C36 19 32 26 20 34Z" fill="#f2c4d2" stroke="#b8924f" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></symbol><symbol id="i-pin" viewBox="0 0 40 40"><path d="M8 30 L30 8 Q34 4 37 8 Q40 12 35 16 L14 37" fill="none" stroke="#b8924f" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 30 Q4 34 8 37 Q11 40 14 37" fill="none" stroke="#b8924f" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="35.5" cy="10" r="3" fill="#f6e6c4" stroke="#b8924f" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></symbol><symbol id="i-bow" viewBox="0 0 40 40"><path d="M20 20 C12 12 4 12 4 18 C4 25 12 25 20 20Z" fill="#e2b6cd" stroke="#b8924f" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/><path d="M20 20 C28 12 36 12 36 18 C36 25 28 25 20 20Z" fill="#e2b6cd" stroke="#b8924f" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/><path d="M18 21 L13 32 M22 21 L27 32" stroke="#b8924f" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><circle cx="20" cy="20" r="3" fill="#cf93b3" stroke="#b8924f" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></symbol><symbol id="i-dots" viewBox="0 0 40 40"><circle cx="8" cy="20" r="2.4" fill="#e7c98a"/><circle cx="20" cy="12" r="1.8" fill="#e2b6cd"/><circle cx="31" cy="22" r="2.2" fill="#d9c8ec"/><circle cx="21" cy="30" r="1.5" fill="#e7c98a"/></symbol></defs></svg>
+
+  <!-- balloon bunch reused on the RSVP page -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <radialGradient id="rb1" cx=".36" cy=".3" r=".8"><stop offset="0" stop-color="#f3ecfa"/><stop offset=".5" stop-color="#cdb8e3"/><stop offset="1" stop-color="#9179b5"/></radialGradient>
+      <radialGradient id="rb2" cx=".36" cy=".3" r=".8"><stop offset="0" stop-color="#f8e3ea"/><stop offset=".5" stop-color="#e3b2c6"/><stop offset="1" stop-color="#b47895"/></radialGradient>
+      <radialGradient id="rb3" cx=".36" cy=".3" r=".8"><stop offset="0" stop-color="#fff6de"/><stop offset=".5" stop-color="#ecd7a4"/><stop offset="1" stop-color="#b8924f"/></radialGradient>
+      <g id="rsvpBalloonArt">
+        <path d="M40 92 C52 130 70 150 75 228 M110 84 C98 130 80 150 75 228 M75 76 C72 130 78 160 75 228" stroke="#c4a160" stroke-width="1.2" fill="none"/>
+        <path d="M40 6 C60 6 72 22 72 42 C72 66 54 82 40 84 C26 82 8 66 8 42 C8 22 20 6 40 6Z" fill="url(#rb1)"/><ellipse cx="28" cy="28" rx="6" ry="12" transform="rotate(28 28 28)" fill="#fff" opacity=".5"/>
+        <path d="M110 0 C130 0 142 16 142 36 C142 60 124 76 110 78 C96 76 78 60 78 36 C78 16 90 0 110 0Z" fill="url(#rb3)"/><ellipse cx="98" cy="22" rx="6" ry="12" transform="rotate(28 98 22)" fill="#fff" opacity=".55"/>
+        <path d="M75 -4 C98 -4 112 14 112 38 C112 64 92 80 75 82 C58 80 38 64 38 38 C38 14 52 -4 75 -4Z" fill="url(#rb2)"/><ellipse cx="61" cy="20" rx="7" ry="14" transform="rotate(28 61 20)" fill="#fff" opacity=".5"/>
+        <path d="M62 214 C66 206 74 206 75 212 C76 206 84 206 88 214 C84 222 78 222 75 216 C72 222 66 222 62 214Z" fill="#c9a0b8"/>
+      </g>
+    </defs>
+  </svg>
+
+  <script src="script.js?v=pram-1"></script>
+</body>
+</html>
